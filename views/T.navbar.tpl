@@ -1,5 +1,5 @@
 {{define "navbar"}}
-    <a href="/" class="navbar-brand">首页</a>
+    <a href="/" class="navbar-brand">Beego Web</a>
     <div>
     <ul class="nav navbar-nav">
       <li {{if .IsHome}} class="active" {{end}} ><a href="/">首页</a></li>

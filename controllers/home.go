@@ -8,7 +8,8 @@ type MainController struct {
 	beego.Controller
 }
 
-func (c *MainController) Get() {
-	c.Data["IsHome"] = true
-	c.TplName = "home.html"
+func (this *MainController) Get() {
+	this.Data["IsHome"] = true
+	this.Data["IsLogin"] = checkAccout(this.Ctx)
+	this.TplName = "home.html"
 }
